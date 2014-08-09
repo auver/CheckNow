@@ -15,6 +15,7 @@ Lightweight Form Validation (Can Use HTML5 Attr)
  - message 错误消息的文字内容
  - errorClass 检测出错的input需要追加的类
  - messageClass 显示的错误文字的类名
+
 可以设置的单个属性：
  - message 错误消息的文字内容
  - errorClass 检测出错的input需要追加的类
