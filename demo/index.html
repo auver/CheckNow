@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<script src="jquery-1.9.0.js"></script>
+	<script src="../jquery.checknow.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		$("#needCheckNow").checkNow({
+			fields: {
+				'#phone': {
+					message: '请检查是否为电话号码'
+				},
+				'#email': {
+					required: false,
+					message: '请检查是否为邮箱地址'
+				},
+				'#pwd': {
+				}
+
+			},
+			config: {
+				autoCheck: true,
+				message: '请检查输入内容',
+				errorClass: 'beError',
+				messageClass: 'msg'
+			}
+		});
+	});
+		
+	</script>
+</head>
+<body>
+	<form id="needCheckNow" action="www.com" method="post">
+		<input type="cnPhone" id="phone" name="phone" required="required" novalidate="true">
+		<input type="email" id="email" name="email" required="required" novalidate="true">
+		<input type="password" id="pwd" name="pwd" required="required" novalidate="true">
+		<input type="submit">
+	</form>
+</body>
+</html>
