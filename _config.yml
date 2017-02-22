@@ -1,0 +1,8 @@
+title: Checknow
+description: Lightweight Form Validation (Can Use HTML5 Attr)
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
